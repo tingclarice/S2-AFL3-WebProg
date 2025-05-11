@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarice's Portfolio | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FEE5E0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-soft-navy {
+            background-color: #385895; 
+        }
+
+        .bg-soft-pink {
+            background-color: #E2C0E5;
+        }
+
+        /* header */
+        /* Hi! styling */
+        .hi-styling {
+            color: #385895;
+            font-weight: 800;
+            -webkit-text-stroke: 0.07em #FFFFFF;
+            paint-order: stroke fill;
+        }
+
+        /* I'm Clarice styling */
+        .intro-styling {
+            color: #87B0FF;
+            font-weight: 800;
+            -webkit-text-stroke: 0.07em #FFFFFF;
+            paint-order: stroke fill;
+        }
+
+        /* <Code/> styling */
+        .code-styling {
+            color: #FFDFFC;
+            font-weight: 800;
+            -webkit-text-stroke: 0.1em #7C0202;
+            paint-order: stroke fill;
+        }
+
+        /* Experience */
+        .white-outline {
+            -webkit-text-stroke: 0.1em #FFFFFF;
+            paint-order: stroke fill;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="flex justify-center mt-1">
+        <ul class="flex rounded-full border-2 border-black bg-soft-pink p-2">
+            <li>
+                <a href="home.html" class="bg-soft-navy text-white font-bold px-6 py-1 rounded-full">home</a>
+            </li>
+            <li>
+                <a href="hobby.html" class="text-white font-semibold px-6 py-1">about</a>
+            </li>
+            <li>
+                <a href="gallery.html" class="text-white font-semibold px-6 py-1">gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row justify-center items-center gap-8 p-8 pb-16">
+        <h1 class="text-4xl font-bold space-y-2 leading-tight">
+            <span class="hi-styling">Hi!</span><br>
+            <span class="intro-styling drop-shadow-sm">I'm Clarice</span><br>
+            <span class="hi-styling">I like to </span><span class="code-styling drop-shadow-md">&lt;Code/&gt;</span>
+        </h1>
+        <img src="src/home/header/polygon.svg" alt="polygon decoration" 
+            class= "absolute top-24 left-24 w-28 -z-10 
+                    md:top-56 md:left-80" />
+        <img src="src/home/header/profile-picture.png" alt="Clarice's photo" width="200" height="200">
+    </header>
+
+    <!-- About Section -->
+    <div class="relative bg-[#385895] text-white">
+
+    <!-- Top Wave -->
+    <svg class="w-full -mt-1" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,80 C360,0 1080,150 1440,40 L1440,0 L0,0 Z" fill="#FEE5E0" />
+    </svg>
+
+    <!-- Content Container -->
+    <div class="px-6 py-12 md:px-12 rounded-t-none">
+        <!-- Title -->
+        <h2 class="text-4xl font-bold text-left text-pink-200 mb-10">about me<span class="text-white">.</span></h2>
+
+        <!-- Speech Bubbles -->
+        <div class="flex flex-col gap-6 max-w-xl mx-auto">
+
+        <!-- Bubble 1 -->
+        <div class="bg-white text-[#385895] p-4 rounded-xl relative max-w-md self-end">
+            <p class="font-semibold">
+            Hi there! I’m Clarice Harijanto, an informatics student at Universitas Ciputra.
+            </p>
+            <div class="absolute bottom-[-10px] right-6 w-0 h-0 border-l-[10px] border-l-transparent border-t-[10px] border-t-white"></div>
+        </div>
+
+        <!-- Bubble 2 -->
+        <div class="bg-white text-[#385895] p-4 rounded-xl relative max-w-md self-start">
+            <p class="font-semibold">
+            I currently work part-time as a social media manager & strategist at AKA Virtual.
+            </p>
+            <div class="absolute bottom-[-10px] left-6 w-0 h-0 border-r-[10px] border-r-transparent border-t-[10px] border-t-white"></div>
+        </div>
+
+        <!-- Bubble 3 -->
+        <div class="bg-white text-[#385895] p-4 rounded-xl relative max-w-md self-end">
+            <p class="font-semibold">
+            In my free time, I enjoy watercolor painting, singing & playing the piano!
+            </p>
+            <div class="absolute bottom-[-10px] right-6 w-0 h-0 border-l-[10px] border-l-transparent border-t-[10px] border-t-white"></div>
+        </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Bottom Wave -->
+    <div class="bg-[#ECBDBE]">
+        <svg class="w-full -mt-1" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,80 C360,0 1080,150 1440,40 L1440,0 L0,0 Z" fill="#385895" />
+        </svg>
+    </div>
+
+    <!-- Experience -->
+    <div class="experience  px-28 md:px-40 pt-10 pb-12 bg-[#ECBDBE]">
+        <h2 class="text-3xl font-bold text-center text-[#7C0202] mb-10 white-outline">Experience</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- AKA Virtual -->
+        <div class="bg-[#FFEEEE] rounded-xl shadow-md flex flex-col items-center py-6 px-4">
+            <img src="src/home/experience-logos/aka.png" alt="AKA Virtual Logo" class="w-16 h-16 mb-4">
+            <h3 class="text-base font-semibold text-[#9B5957] text-center">Social Media Manager & Strategist</h3>
+            <p class="text-[#D79694] font-medium">2023 - 2025</p>
+        </div>
+        <!-- GenG Community -->
+        <div class="bg-[#FFEEEE] rounded-xl shadow-md flex flex-col items-center py-6 px-4">
+            <img src="src/home/experience-logos/geng.png" alt="GenG Logo" class="w-16 h-16 mb-4">
+            <h3 class="text-base font-semibold text-[#9B5957] text-center">Tech Community Writer</h3>
+            <p class="text-[#D79694] font-medium">2024</p>
+        </div>
+        <!-- IMT Pulse Technology -->
+        <div class="bg-[#FFEEEE] rounded-xl shadow-md flex flex-col items-center py-6 px-4">
+            <img src="src/home/experience-logos/su.png" alt="IMT Pulse Logo" class="w-16 h-16 mb-4">
+            <h3 class="text-base font-semibold text-[#9B5957] text-center">IMT Pulse Technology</h3>
+            <p class="text-[#D79694] font-medium">2024</p>
+        </div>
+        <!-- Apple Foundation -->
+        <div class="bg-[#FFEEEE] rounded-xl shadow-md flex flex-col items-center py-6 px-4">
+            <img src="src/home/experience-logos/ada.png" alt="Apple Foundation Logo" class="w-24 h-16 mb-4">
+            <h3 class="text-base font-semibold text-[#9B5957] text-center">Apple Foundation Participant</h3>
+            <p class="text-[#D79694] font-medium">2023</p>
+        </div>
+        <!-- GenDigital Academy -->
+        <div class="bg-[#FFEEEE] rounded-xl shadow-md flex flex-col items-center py-6 px-4">
+            <img src="src/home/experience-logos/gend.png" alt="GenDigital Logo" class="w-16 h-16 mb-4">
+            <h3 class="text-base font-semibold text-[#9B5957] text-center">Digital Literacy Mentor</h3>
+            <p class="text-[#D79694] font-medium">2022 - 2023</p>
+        </div>
+        <!-- Piano Tutor -->
+        <div class="bg-[#FFEEEE] rounded-xl shadow-md flex flex-col items-center py-6 px-4">
+            <img src="src/home/experience-logos/note.png" alt="Music Note Logo" class="w-16 h-16 mb-4">
+            <h3 class="text-base font-semibold text-[#9B5957] text-center">Freelance Piano Tutor</h3>
+            <p class="text-[#D79694] font-medium">2022 - 2023</p>
+        </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <section class="bg-[#FEE5E0] py-12 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+        <!-- Services -->
+        <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-bold text-[#771717] mb-6 white-outline">My Services</h2>
+        <div class="space-y-4">
+            <!-- Service Card -->
+            <div class="shadow-md flex items-center justify-between bg-[#FFEEEE] border-2 border-[#F4B5A7] rounded-xl p-4">
+            <div class="flex items-center gap-4">
+                <img src="src/home/services/web.png" alt="HTML" class="w-10 h-10" />
+                <span class="text-[#9B5957] font-semibold text-lg">Front-End Web Development</span>
+            </div>
+            <span class="text-[#F4B5A7] text-2xl">&#9662;</span>
+            </div>
+
+            <div class="shadow-md flex items-center justify-between bg-[#FFEEEE] border-2 border-[#F4B5A7] rounded-xl p-4">
+            <div class="flex items-center gap-4">
+                <img src="src/home/services/ai.png" alt="AI" class="w-10 h-10" />
+                <span class="text-[#9B5957] font-semibold text-lg">Graphic Design</span>
+            </div>
+            <span class="text-[#9B5957] text-2xl">&#9662;</span>
+            </div>
+
+            <div class="shadow-md flex items-center justify-between bg-[#FFEEEE] border-2 border-[#F4B5A7] rounded-xl p-4">
+            <div class="flex items-center gap-4">
+                <img src="src/home/services/vid.png" alt="CapCut" class="w-10 h-10" />
+                <span class="text-[#9B5957] font-semibold text-lg">Video Editing</span>
+            </div>
+            <span class="text-[#F4B5A7] text-2xl">&#9662;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry Form -->
+    <div class="w-full md:w-1/2 bg-[#385895] rounded-3xl p-6 text-white shadow-lg">
+        <h3 class="text-xl text-[#FFDFFC] font-semibold mb-4">&lt; inquiry / &gt;</h3>
+        <form class="space-y-4">
+            <div>
+            <label class="block font-semibold text-[#FFDFFC] text-sm mb-1" for="name">Name</label>
+            <input type="text" id="name" class="w-full px-4 py-2 rounded-full text-black" />
+            </div>
+            <div>
+            <label class="block font-semibold text-[#FFDFFC] text-sm mb-1" for="email">Email</label>
+            <input type="email" id="email" class="w-full px-4 py-2 rounded-full text-black" />
+            </div>
+            <div>
+            <label class="block text-[#FFDFFC] font-semibold text-sm mb-1" for="service">Service</label>
+            <select id="service" class="w-full px-4 py-2 pr-10 rounded-full text-[#385793] appearance-none bg-white">
+                <option class="text-[#385793]">Front-End Web Development</option>
+                <option class="text-[#385793]">Graphic Design</option>
+                <option class="text-[#385793]">Video Editing</option>
+            </select>
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" class="mt-6 bg-[#FFDFFC] text-[#385895] font-semibold py-2 px-6 rounded-full">
+            submit
+            </button>
+            </div>
+            
+        </form>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="mt-4 bg-[#C2C7E4] text-center py-4 rounded-t-3xl text-[#771717] border-1 border-[#ECBDBE]">
+        <div class="flex justify-center space-x-6 mb-2 text-xl">
+        <a href="mailto:charijanto01@student.ciputra.ac.id"><img src="src/footer-logo/mail.svg" alt="email" width="40px" height="40px"></a>
+        <a href="https://www.instagram.com/clahrin/#" target="_blank"><img src="src/footer-logo/insta.svg" alt="instagram" width="40px" height="40px"></a>
+        <a href="https://github.com/tingclarice" target="_blank"><img src="src/footer-logo/git.svg" alt="github" width="40px" height="40px"></a>
+        </div>
+        <p class="text-[#9B5957] text-sm font-bold">© 2025 Clarice Harijanto. All rights reserved.</p>
+    </div>
+</body>
+</html>
