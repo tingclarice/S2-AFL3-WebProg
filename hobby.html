@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarice's Portfolio | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col bg-[#ECBDBE]">
+    <!-- Navigation -->
+    <nav class="flex justify-center mt-1">
+        <ul class="flex rounded-full border-2 border-black bg-[#E2C0E5] p-2">
+            <li>
+                <a href="index.html" class="text-white font-bold px-6 py-1 rounded-full">home</a>
+            </li>
+            <li>
+                <a href="hobby.html" class="bg-[#385895] rounded-full text-white font-semibold px-6 py-1">hobby</a>
+            </li>
+            <li>
+                <a href="gallery.html" class="text-white font-semibold px-6 py-1">gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hobby Section -->
+    <main class="flex-grow flex flex-col lg:flex-row items-center justify-center">
+        <div class="flex flex-col lg:flex-row mt-7 mb-7 items-center lg:items-start">
+            <!-- Buttons -->
+            <div class="flex flex-row lg:flex-col lg:mt-12 lg:-mr-6 space-x-4 lg:space-x-0 lg:space-y-4 items-center mb-4 lg:mb-0">
+            <button id="music-button" class="hobby-button p-3 lg:pr-10 bg-[#B86B69] rounded-3xl text-white hover:bg-[#9B576B]">
+                <img src="src/hobby/icon_note.png" alt="Music Toggle Button" width="50">
+            </button>
+            <button id="art-button" class="hobby-button p-3 lg:pr-10 bg-[#D79694] rounded-3xl text-white hover:bg-[#9B576B]">
+                <img src="src/hobby/icon_palette.png" alt="Art Toggle Button" width="50">
+            </button>
+            </div>
+
+            <!-- Hobby Content -->
+            <div class="text-center bg-[#FFEEEE] p-6 rounded-3xl shadow-md max-w-md lg:max-w-xl mx-auto">
+            <h2 id="hobby-title" class="hi-styling text-3xl font-bold mb-4">Music</h2>
+            <div id="hobby-image-container" class="mb-4">
+                <img id="hobby-image" class="mx-auto" width="300" src="src/hobby/music.png" alt="Playing piano">
+            </div>
+            <p id="hobby-description" class="text-[#9B5957] font-semibold">
+                One of my favorite leisure activities is singing & playing the piano! Though I'm still quite an amateur at it, I find it quite relaxing to do. Especially for winding down after a long day. I started playing the piano when I was around 6 or 7 years old, but never really studied it at a more advanced level. Still, I enjoy teaching my youngest sister to play simple songs.
+            </p>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- Footer -->
+    <div class="mt-4 bg-[#C2C7E4] text-center py-4 rounded-t-3xl text-[#771717] border-1 border-[#ECBDBE]">
+        <div class="flex justify-center space-x-6 mb-2 text-xl">
+        <a href="mailto:charijanto01@student.ciputra.ac.id"><img src="src/footer-logo/mail.svg" alt="email" width="40px" height="40px"></a>
+        <a href="https://www.instagram.com/clahrin/#" target="_blank"><img src="src/footer-logo/insta.svg" alt="instagram" width="40px" height="40px"></a>
+        <a href="https://github.com/tingclarice" target="_blank"><img src="src/footer-logo/git.svg" alt="github" width="40px" height="40px"></a>
+        </div>
+        <p class="text-[#9B5957] text-sm font-bold">© 2025 Clarice Harijanto. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
