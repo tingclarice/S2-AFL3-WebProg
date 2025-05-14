@@ -1,4 +1,12 @@
 // INDEX.HTML
+// START - Spinning Polygon Animation
+// Automatically start spinning when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    const image = document.getElementById('spinningImage');
+    image.classList.add('spin');
+});
+// END - Spinning Polygon Animation
+
 // START - Speech Bubble Animation
 document.addEventListener("DOMContentLoaded", () => {
     const bubbles = document.querySelectorAll(".speech-bubble");
@@ -23,6 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
     bubbles.forEach((bubble) => observer.observe(bubble));
 });
 // END - Speech Bubble Animation
+
+// START - Experience Card Animation
+document.addEventListener("DOMContentLoaded", function () {
+const elements = document.querySelectorAll(".fade-in-up");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // optional: only animate once
+    }
+    });
+}, {
+    threshold: 0.1
+});
+
+elements.forEach((el) => observer.observe(el));
+});
+
+// END - Experience Card Animation
 
 // HOBBY.HTML
 
