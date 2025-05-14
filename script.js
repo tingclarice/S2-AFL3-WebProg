@@ -1,3 +1,16 @@
+// Nav Sound
+const navHoverSound = document.getElementById('navHoverSound');
+
+// Select all <a> elements inside <nav>
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        navHoverSound.currentTime = 0; // reset to start
+        navHoverSound.play();
+    });
+});
+
 // INDEX.HTML
 // START - Spinning Polygon Animation
 // Automatically start spinning when the page loads
